@@ -1,0 +1,26 @@
+<svg width="600" height="350" viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white" rx="8"/>
+  <text x="300" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1a202c" text-anchor="middle">Distributed Machine Learning Evaluation (Spark MLlib)</text>
+  <text x="300" y="58" font-family="Arial, sans-serif" font-size="12" fill="#718096" text-anchor="middle">BinaryClassificationEvaluator on 80/20 Test Split</text>
+  
+  <!-- Y-Axis Grid -->
+  <line x1="80" y1="270" x2="540" y2="270" stroke="#e2e8f0" stroke-width="1.5"/>
+  <line x1="80" y1="200" x2="540" y2="200" stroke="#edf2f7" stroke-dasharray="4"/>
+  <line x1="80" y1="130" x2="540" y2="130" stroke="#edf2f7" stroke-dasharray="4"/>
+
+  <text x="70" y="274" font-family="Arial, sans-serif" font-size="11" fill="#a0aec0" text-anchor="end">0%</text>
+  <text x="70" y="204" font-family="Arial, sans-serif" font-size="11" fill="#a0aec0" text-anchor="end">40%</text>
+  <text x="70" y="134" font-family="Arial, sans-serif" font-size="11" fill="#a0aec0" text-anchor="end">80%</text>
+
+  <!-- Model 1: Logistic Regression (70.61%) -> height = 0.7061 / 0.85 * 150 = 124.6 -->
+  <rect x="150" y="146" width="110" height="124" rx="5" fill="#3182ce"/>
+  <text x="205" y="132" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#3182ce" text-anchor="middle">70.61%</text>
+  <text x="205" y="292" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2d3748" text-anchor="middle">Logistic Regression</text>
+  <text x="205" y="310" font-family="Arial, sans-serif" font-size="11" fill="#718096" text-anchor="middle">Area Under ROC</text>
+
+  <!-- Model 2: Decision Tree (69.49%) -> height = 0.6949 / 0.85 * 150 = 122.6 -->
+  <rect x="340" y="148" width="110" height="122" rx="5" fill="#38a169"/>
+  <text x="395" y="134" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#38a169" text-anchor="middle">69.49%</text>
+  <text x="395" y="292" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2d3748" text-anchor="middle">Decision Tree</text>
+  <text x="395" y="310" font-family="Arial, sans-serif" font-size="11" fill="#718096" text-anchor="middle">Accuracy (Depth 5)</text>
+</svg>

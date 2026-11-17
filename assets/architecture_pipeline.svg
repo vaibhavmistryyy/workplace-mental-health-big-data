@@ -1,0 +1,92 @@
+<svg width="800" height="340" viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3c72"/>
+      <stop offset="100%" stop-color="#2a5298"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e65c00"/>
+      <stop offset="100%" stop-color="#f9d423"/>
+    </linearGradient>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#11998e"/>
+      <stop offset="100%" stop-color="#38ef7d"/>
+    </linearGradient>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8e2de2"/>
+      <stop offset="100%" stop-color="#4a00e0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#f8f9fa" rx="10"/>
+  <text x="400" y="38" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#222" text-anchor="middle">Distributed Big Data Analytics &amp; Machine Learning Architecture</text>
+  
+  <!-- Step 1: HDFS -->
+  <g transform="translate(30, 75)" filter="url(#shadow)">
+    <rect width="155" height="200" rx="8" fill="white" stroke="#1e3c72" stroke-width="2"/>
+    <rect width="155" height="36" rx="8" fill="url(#grad1)"/>
+    <text x="77" y="24" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">1. Hadoop HDFS</text>
+    <text x="15" y="65" font-family="Arial, sans-serif" font-size="12" fill="#333" font-weight="bold">Data Ingestion</text>
+    <text x="15" y="88" font-family="Arial, sans-serif" font-size="11" fill="#555">• Distributed Cluster</text>
+    <text x="15" y="108" font-family="Arial, sans-serif" font-size="11" fill="#555">• /user/root/final_project</text>
+    <text x="15" y="128" font-family="Arial, sans-serif" font-size="11" fill="#555">• CSV storage</text>
+    <text x="15" y="148" font-family="Arial, sans-serif" font-size="11" fill="#555">• Fault Tolerance</text>
+    <text x="15" y="180" font-family="Arial, sans-serif" font-size="10" fill="#888"></text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M 195 175 L 225 175" stroke="#444" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <polygon points="225,175 217,170 217,180" fill="#444"/>
+
+  <!-- Step 2: Apache Hive -->
+  <g transform="translate(230, 75)" filter="url(#shadow)">
+    <rect width="155" height="200" rx="8" fill="white" stroke="#e65c00" stroke-width="2"/>
+    <rect width="155" height="36" rx="8" fill="url(#grad2)"/>
+    <text x="77" y="24" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">2. Apache Hive</text>
+    <text x="15" y="65" font-family="Arial, sans-serif" font-size="12" fill="#333" font-weight="bold">Data Warehousing</text>
+    <text x="15" y="88" font-family="Arial, sans-serif" font-size="11" fill="#555">• mental_health_db</text>
+    <text x="15" y="108" font-family="Arial, sans-serif" font-size="11" fill="#555">• External Tables</text>
+    <text x="15" y="128" font-family="Arial, sans-serif" font-size="11" fill="#555">• Schema-on-Read</text>
+    <text x="15" y="148" font-family="Arial, sans-serif" font-size="11" fill="#555">• Distributed SQL/Tez</text>
+    <text x="15" y="180" font-family="Arial, sans-serif" font-size="10" fill="#888">Missing Data Audit</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <polygon points="425,175 417,170 417,180" fill="#444"/>
+  <path d="M 395 175 L 425 175" stroke="#444" stroke-width="2.5"/>
+
+  <!-- Step 3: Apache Spark -->
+  <g transform="translate(430, 75)" filter="url(#shadow)">
+    <rect width="155" height="200" rx="8" fill="white" stroke="#11998e" stroke-width="2"/>
+    <rect width="155" height="36" rx="8" fill="url(#grad3)"/>
+    <text x="77" y="24" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">3. Apache Spark</text>
+    <text x="15" y="65" font-family="Arial, sans-serif" font-size="12" fill="#333" font-weight="bold">In-Memory EDA</text>
+    <text x="15" y="88" font-family="Arial, sans-serif" font-size="11" fill="#555">• DataFrames &amp; RDDs</text>
+    <text x="15" y="108" font-family="Arial, sans-serif" font-size="11" fill="#555">• Spark SQL Queries</text>
+    <text x="15" y="128" font-family="Arial, sans-serif" font-size="11" fill="#555">• Gender Normalization</text>
+    <text x="15" y="148" font-family="Arial, sans-serif" font-size="11" fill="#555">• Company Size Clean</text>
+    <text x="15" y="180" font-family="Arial, sans-serif" font-size="10" fill="#888">Apache Zeppelin</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <polygon points="625,175 617,170 617,180" fill="#444"/>
+  <path d="M 595 175 L 625 175" stroke="#444" stroke-width="2.5"/>
+
+  <!-- Step 4: Spark MLlib -->
+  <g transform="translate(630, 75)" filter="url(#shadow)">
+    <rect width="145" height="200" rx="8" fill="white" stroke="#8e2de2" stroke-width="2"/>
+    <rect width="145" height="36" rx="8" fill="url(#grad4)"/>
+    <text x="72" y="24" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">4. Spark MLlib</text>
+    <text x="12" y="65" font-family="Arial, sans-serif" font-size="12" fill="#333" font-weight="bold">Predictive Modeling</text>
+    <text x="12" y="88" font-family="Arial, sans-serif" font-size="11" fill="#555">• StringIndexer</text>
+    <text x="12" y="108" font-family="Arial, sans-serif" font-size="11" fill="#555">• VectorAssembler</text>
+    <text x="12" y="128" font-family="Arial, sans-serif" font-size="11" fill="#555">• Logistic Regression</text>
+    <text x="12" y="148" font-family="Arial, sans-serif" font-size="11" fill="#555">• Decision Trees</text>
+    <text x="12" y="180" font-family="Arial, sans-serif" font-size="10" fill="#888">AUC: 70.6% | F-Imp</text>
+  </g>
+  
+  <text x="400" y="315" font-family="Arial, sans-serif" font-size="11" fill="#777" text-anchor="middle">Designed &amp; Developed by Vaibhav Mistry | Big Data Engineering Portfolio</text>
+</svg>

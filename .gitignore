@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter & Zeppelin Checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.zeppelin/
+
+# Metastore and Database Local Artifacts
+metastore_db/
+derby.log
+spark-warehouse/
+.hivehistory
+
+# OS & Editor
+.DS_Store
+.DS_Store?
+._*
+.vscode/
+.idea/
+*.log
